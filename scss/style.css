@@ -1,0 +1,124 @@
+body {
+  margin: auto;
+  width: 50%;
+  background: #291740; }
+  body .TicTacToe {
+    margin: auto;
+    width: 50%; }
+  body h1 {
+    margin: 0px;
+    padding: 40px 0px 20px 0px;
+    width: 300px;
+    height: 50px;
+    color: #86898C;
+    text-align: center; }
+  body #menu {
+    background: #0F0817;
+    position: fixed;
+    height: 260px;
+    width: 260px;
+    border: 20px solid #0F0817;
+    /* The switch - the box around the slider */
+    /* Hide default HTML checkbox */
+    /*.switch input {display:none;}*/
+    /* The slider */ }
+    body #menu #gModeDiv {
+      margin: auto;
+      position: relative; }
+      body #menu #gModeDiv .text-block {
+        position: absolute;
+        color: #0F0817;
+        height: 50px;
+        width: 100px;
+        top: 5px;
+        left: 30px; }
+        body #menu #gModeDiv .text-block h4 {
+          margin: 0px; }
+      body #menu #gModeDiv .text-block2 {
+        position: absolute;
+        color: #0F0817;
+        height: 50px;
+        width: 100px;
+        top: 5px;
+        right: 0px; }
+        body #menu #gModeDiv .text-block2 h4 {
+          margin: 0px; }
+    body #menu #colorButtonDiv {
+      margin: auto; }
+      body #menu #colorButtonDiv .text-color1 {
+        position: absolute;
+        color: #0F0817;
+        height: 50px;
+        width: 100px;
+        bottom: 0px;
+        left: 30px; }
+        body #menu #colorButtonDiv .text-color1 h4 {
+          margin: 0px; }
+      body #menu #colorButtonDiv .text-color2 {
+        position: absolute;
+        color: #0F0817;
+        height: 50px;
+        width: 100px;
+        bottom: 0px;
+        right: 0px; }
+        body #menu #colorButtonDiv .text-color2 h4 {
+          margin: 0px; }
+    body #menu .switch {
+      position: relative;
+      display: inline-block;
+      width: 260px;
+      height: 127px;
+      padding: input;
+        padding-display: none; }
+      body #menu .switch .slider {
+        position: absolute;
+        cursor: pointer;
+        margin: 0px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-color: #522D80;
+        border: 2px solid #522D80;
+        -webkit-transition: .4s;
+        transition: .4s; }
+    body #menu .slider:before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 50%;
+      left: -2px;
+      top: -2px;
+      background-color: #0F0817;
+      border: 4px solid #86898C;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    body #menu input:checked + .slider {
+      background-color: #522D80;
+      /*#2196F3;*/ }
+    body #menu input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3; }
+    body #menu input:checked + .slider:before {
+      -webkit-transform: translateX(130px);
+      -ms-transform: translateX(130px);
+      transform: translateX(130px); }
+  body #board {
+    background: #291740;
+    height: 300px;
+    width: 300px; }
+    body #board .box {
+      display: inline-block;
+      color: #86898C;
+      width: 32%;
+      height: 33%;
+      border-color: #86898C; }
+  body .start {
+    background: #0F0817;
+    color: #86898C;
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    border-color: #86898C; }
+
+/*# sourceMappingURL=style.css.map */

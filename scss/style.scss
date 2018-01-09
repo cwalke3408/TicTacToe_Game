@@ -1,0 +1,177 @@
+$back-color: #291740;
+$primary-color: #0F0817;
+$secondary-color: #86898C; //#8348CC;
+$home-color: #F66733;
+$away-color: #522D80;
+
+body{
+    .TicTacToe{
+        margin: auto;
+        width: 50%;
+    }
+    margin: auto;
+    width: 50%;
+
+    background: $back-color;
+    h1{
+        margin: 0px;
+        padding: 40px 0px 20px 0px;
+        width: 300px;
+        height: 50px;
+        color: $secondary-color;
+        text-align: center;
+    }
+
+    #menu{
+        background: $primary-color;
+        position: fixed;
+        height: 260px;
+        width: 260px;
+        border: 20px solid $primary-color;
+
+
+
+        /* The switch - the box around the slider */
+        #gModeDiv{
+            margin: auto;
+            position: relative;
+
+            .text-block{
+                position: absolute;
+                color: $primary-color;
+                height: 50px;
+                width: 100px;
+                top: 5px;
+                left: 30px;
+                h4{
+                    margin: 0px;
+                }
+            }
+
+            .text-block2{
+                position: absolute;
+                color: $primary-color;
+                height: 50px;
+                width: 100px;
+                top: 5px;
+                right: 0px;
+                h4{
+                    margin: 0px;
+                }
+            }
+        }
+
+        #colorButtonDiv{
+            margin: auto;
+
+            .text-color1{
+                position: absolute;
+                color: $primary-color;
+                height: 50px;
+                width: 100px;
+                bottom: 0px;
+                left: 30px;
+                h4{
+                    margin: 0px;
+                }
+            }
+            .text-color2{
+                position: absolute;
+                color: $primary-color;
+                height: 50px;
+                width: 100px;
+                bottom: 0px;
+                right: 0px;
+
+                h4{
+                    margin: 0px;
+                }
+            }
+        }
+
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 260px;
+          height: 127px;
+          padding:
+
+          input {
+            display: none;
+          }
+
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            margin: 0px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            background-color: $away-color;
+            border: 2px solid $away-color;
+
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+        }
+
+        /* Hide default HTML checkbox */
+        /*.switch input {display:none;}*/
+
+        /* The slider */
+
+        .slider:before {
+          position: absolute;
+
+          content: "";
+
+          height: 100%;
+          width: 50%;
+          left: -2px;
+          top: -2px;
+          background-color: $primary-color;
+          border: 4px solid $secondary-color;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+
+
+        input:checked + .slider {
+          background-color: $away-color;/*#2196F3;*/
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(130px);
+          -ms-transform: translateX(130px);
+          transform: translateX(130px);
+        }
+    }
+
+    #board{
+        background: $back-color;
+        height: 300px;
+        width: 300px;
+
+        .box{
+            display: inline-block;
+            color: $secondary-color;
+            width: 32%;
+            height: 33%;
+            border-color: $secondary-color;
+        }
+    }
+    .start{
+        background: $primary-color;
+        color: $secondary-color;
+        margin-top: 30px;
+        width: 300px;
+        height: 100px;
+        border-color: $secondary-color;
+    }
+}

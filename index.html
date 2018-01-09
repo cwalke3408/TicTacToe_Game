@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+        <style> body {padding: 0; margin: 0;} </style>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="scss/style.css">
+    </head>
+
+    <body>
+        <div class="TicTacToe">
+
+            <h1> Tic Tac Toe </h1>
+
+
+            <div class="gameStage" id='menu'>
+                <div id="gModeDiv">
+                    <label class="switch">
+                        <input id='gameMode' type="checkbox">
+
+                        <span class="slider"></span>
+                        <!--<span class="option2"></span>-->
+                        <!--<span class="slider">2 Player</span>-->
+                    </label>
+                   <div class="text-block">
+                        <h4> 1 Player</h4>
+                        <h4>Mode</h4>
+                    </div>
+                    <div class="text-block2">
+                        <h4> 2 Player</h4>
+                        <h4>Mode</h4>
+                    </div>
+                </div>
+
+                <div id="colorButtonDiv">
+                    <label class="switch">
+                        <input  id='colorChoice' type="checkbox">
+
+                        <span class="slider"></span>
+                        <!--<span class="slider">2 Player</span>-->
+                    </label>
+                    <div class="text-color1">
+                        <h4>Player 1</h4>
+                        <h4>Color</h4>
+                    </div>
+                    <div class="text-color2">
+                        <h4>Player 2</h4>
+                        <h4>Color</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="gameStage" id='board'>
+                    <button type="button" name="button" class="box" id="box00"></button>
+                    <button type="button" name="button" class="box" id="box01"></button>
+                    <button type="button" name="button" class="box" id="box02"></button>
+
+                    <button type="button" name="button" class="box" id="box10"></button>
+                    <button type="button" name="button" class="box" id="box11"></button>
+                    <button type="button" name="button" class="box" id="box12"></button>
+
+                    <button type="button" name="button" class="box" id="box20"></button>
+                    <button type="button" name="button" class="box" id="box21"></button>
+                    <button type="button" name="button" class="box" id="box22"></button>
+            </div>
+
+
+            <div>
+                <button type="button" name="button" class="start">START</button>
+            </div>
+        </div>
+    </body>
+</html>
